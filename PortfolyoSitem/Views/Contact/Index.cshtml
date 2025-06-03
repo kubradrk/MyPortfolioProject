@@ -1,0 +1,18 @@
+﻿@model PortfolyoSitem.Models.Contact
+
+@{
+    Layout = "_Layout";
+}
+
+<section class="contact-section" style="max-width: 700px; margin: 60px auto; padding: 40px; background: #fdfdfd; border-radius: 12px; box-shadow: 0 0 20px rgba(0,0,0,0.1);">
+    <h2 style="text-align:center; color: #333; font-weight: bold; margin-bottom: 30px;">İletişim Bilgilerim</h2>
+
+    <div style="font-size: 18px; line-height: 1.8; color: #555;">
+        <p><i class="bi bi-person-fill" style="color:#007bff;"></i> <strong>Ad Soyad:</strong> @Model.FullName</p>
+        <p><i class="bi bi-telephone-fill" style="color:#28a745;"></i> <strong>Telefon:</strong> <a href="tel:@Model.Phone" style="color:#28a745; text-decoration:none;">@Model.Phone</a></p>
+        <p><i class="bi bi-envelope-fill" style="color:#dc3545;"></i> <strong>E-posta:</strong> <a href="mailto:@Model.Email" style="color:#dc3545; text-decoration:none;">@Model.Email</a></p>
+        <p><i class="bi bi-linkedin" style="color:#0e76a8;"></i> <strong>LinkedIn:</strong> <a href="https://@Model.LinkedIn" target="_blank" style="text-decoration:none; color:#0e76a8;">@Model.LinkedIn</a></p>
+        <p><i class="bi bi-github" style="color:#000;"></i> <strong>GitHub:</strong> <a href="https://github.com/@Model.GitHub" target="_blank" style="text-decoration:none; color:#000;">@Model.GitHub</a></p>
+        <p><i class="bi bi-geo-alt-fill" style="color:#ff5722;"></i> <strong>Konum:</strong> @Model.Location</p>
+    </div>
+</section>

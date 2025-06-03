@@ -1,0 +1,17 @@
+﻿@model List<PortfolyoSitem.Models.Skill>
+
+<section style="padding: 50px; text-align: center;">
+    <h2 style="color:#e27575;">Yeteneklerim</h2>
+
+    <div style="max-width: 600px; margin: 0 auto; text-align: left;">
+        @foreach (var skill in Model)
+        {
+            <div style="margin-bottom: 20px;">
+                <strong>@skill.Name</strong>
+                <div style="background: #eee; height: 20px; border-radius: 10px; overflow: hidden;">
+                    <div style="width: @skill.Percentage%; background: #e27575; height: 100%;"></div>
+                </div>
+            </div>
+        }
+    </div>
+</section>
